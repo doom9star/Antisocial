@@ -1,0 +1,22 @@
+{% extends "asauth/base.html" %} {% load static %} {% block content %}
+<div class="w-full h-full flex flex-col justify-center items-center">
+  <img
+    src="{% static 'logo.png' %}"
+    alt="Antisocial-Logo"
+    class="w-72 rounded-full"
+  />
+  <div class="mt-10">
+    <a
+      class="mr-4 text-green-900 text-xs border border-green-900 px-6 py-3 rounded"
+      href="{% url 'login' %}"
+    >
+      Login</a
+    >
+    <a
+      class="text-green-900 text-xs border border-green-900 px-6 py-3 rounded"
+      href="{% url 'register' %}"
+      >Register</a
+    >
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% extends "asauth/base.html" %} {% load static %} {% block content %}
+<div class="w-full h-full overflow-hidden">
+  {% include "asmain/components/back.html" %}
+  <div class="flex justify-center items-center mt-20">
+    <img
+      src="{% static 'logo.png' %}"
+      alt="Antisocial-Logo"
+      class="w-96 rounded-full mr-20"
+    />
+    <form class="flex flex-col">
+      {% include 'asauth/components/form.html' %}
+    </form>
+  </div>
+</div>
+{% endblock content %}
